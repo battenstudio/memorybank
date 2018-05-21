@@ -14,11 +14,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
-    <!-- Matomo -->
 <!-- Matomo -->
 <script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.battenstudio.github.io"]);
+  _paq.push(["setDomains", ["*.battenstudio.github.io/memorybank"]]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
@@ -29,7 +31,7 @@
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<!-- End Matomo Code -->
+<noscript><p><img src="https://207.154.197.97/piwik/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 
 </head>
@@ -38,9 +40,11 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">MemoryBank</h3>
+          <h3 class="masthead-brand">
+            <a href="index.html">MemoryBank</a>
+          </h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
+            <!-- <a class="nav-link active" href="#">Home</a> -->
             <!-- <a class="nav-link" href="#">Features</a>
             <a class="nav-link" href="#">Contact</a> -->
             
@@ -53,24 +57,47 @@
 
       <div class="container">
         <!-- <div class="col-8"> -->
-          <h1 class="cover-heading mb-3">Organize your memories.</h1>
+          <h1 class="cover-heading mb-4 mt-3">Organize your memories.</h1>
           <img src="images/memory.png" 
-            style="  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);"
-            class="img-fluid mb-2" />
+            class="img-fluid mb-4" />
 
           <p class="lead">
             Improve your life by organizing  the memories, milestones and people in your life. 
           </p>
 
           <a href='//www.microsoft.com/store/apps/9NW2G2JZ1KW0?ocid=badge'>
-            <img style="max-width: 200px;" class="img-fluid"
+            <img style="max-width: 200px;" class="img-fluid mb-5 mt-3"
             src='https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png' alt='English badge'/>
           </a>
         <!-- </div> -->
       </div>
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="lead">Hier ist ein cooler Text</p>
+          </div>
+          <div class="col-md-2">
+          ok dude
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+                ok dude
+          </div>
+          <div class="col-md-6">
+            <p class="lead">Hier ist ein cooler Text</p>
+          </div>
+          
+        </div>
+      </div> -->
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
+          <div class="btn-group">
+            <a href="impressum.html" class="btn btn-outline-secondary" style="border:none;">Impressum</a>
+            <a href="privacy.html" class="btn btn-outline-secondary" style="border:none;">Privacy</a>
+            <a href="disclaimer.html" class="btn btn-outline-secondary" style="border:none;">Disclaimer</a>
+          </div>
         </div>
       </footer>
     </div>
